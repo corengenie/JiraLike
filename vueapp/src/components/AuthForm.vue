@@ -1,16 +1,45 @@
 <template>
-	<form v-on:submit="auth">
-		<div class="form-group">
-			<label for="loginInput">Логин:</label>
-			<input v-model="loginString" type="login" class="form-control" id="loginInput" placeholder="Введите логин">
+	<div class="w-100 d-flex align-items-center justify-content-center container">
+		<div class="form-wrapper">
+			<form v-on:submit="auth">
+				<h3>Войти</h3>
+				<div class="form-group login-group">
+					<!-- <label for="loginInput">Логин:</label> -->
+					<input v-model="loginString" type="login" class="form-control" id="loginInput" placeholder="Введите логин">
+				</div>
+				<div class="form-group password-group">
+					<!-- <label for="passwordInput">Пароль:</label> -->
+					<input v-model="passwordString" type="password" class="form-control" id="passwordInput" placeholder="Введите пароль">
+				</div>
+				<button type="submit" class="btn btn-primary btn-login">Войти</button>
+			</form>
 		</div>
-		<div class="form-group">
-			<label for="passwordInput">Пароль</label>
-			<input v-model="passwordString" type="password" class="form-control" id="passwordInput" placeholder="Введите пароль">
-		</div>
-		<button type="submit" class="btn btn-primary">Войти</button>
-	</form>
+	</div>
 </template>
+
+<style scoped>
+.form-wrapper {
+	border-radius: 20px;
+	box-shadow: 0px 0px 8px 4px #0d6dfd40;
+	padding: 40px 40px;
+}
+
+h3 {
+	margin-bottom: 20px;
+}
+
+.login-group{
+	margin-bottom: 20px;
+}
+
+.password-group{
+	margin-bottom: 30px;
+}
+
+.btn-login {
+	width: 100%;
+}
+</style>
 
 <script>
 import axios from 'axios';

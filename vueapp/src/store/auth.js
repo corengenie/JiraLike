@@ -38,6 +38,7 @@ const actions = {
         localStorage.removeItem('login')
         localStorage.removeItem('token')
 		commit('setIsAuthorized', false)
+		window.router.push('/')
 	}
 }
 

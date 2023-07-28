@@ -14,15 +14,15 @@ import { mapState } from 'vuex'
 
 export default {
 	name: 'App',
-		computed: mapState({
-				isAuthorized: state => state.auth.isAuthorized
-			}),
+	computed: mapState({
+		isAuthorized: state => state.auth.isAuthorized
+	}),
 	components: {
 		SideBar,
 		AuthForm
 	},
-	mounted(){
-		console.log('mounted')
+	mounted() {
+		window.router = this.$router
 	}
 }
 </script>

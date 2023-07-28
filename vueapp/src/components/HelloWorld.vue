@@ -1,10 +1,10 @@
 <template>
-    <div class="post">
+    <div class="container">
         <div v-if="loading" class="loading">
             Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationvue">https://aka.ms/jspsintegrationvue</a> for more details.
         </div>
 
-        <div v-if="post" class="content">
+        <div v-if="post" class="h-100 content d-flex align-items-center justify-content-center">
             <table>
                 <thead>
                     <tr>
