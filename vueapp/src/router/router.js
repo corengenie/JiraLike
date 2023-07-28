@@ -1,13 +1,24 @@
-// import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-// import HelloWorld from '../components/HelloWorld.vue'
-// import DashBoard from '../components/DashBoard/DashBoard.vue'
+import HelloWorld from "@/HelloWorld.vue";
+import DashBoard from "@/DashBoard/DashBoard.vue";
 
-// let router = new VueRouter({
-//     routes: [
-//         { path: '/', name: 'main', component: HelloWorld },
-//         { path: '/dashboard', name: 'dashboard', component: DashBoard },
-//     ]
-// });
+const routes = [
+  {
+    path: "/",
+    name: "main",
+    component: HelloWorld,
+    default: true,
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    component: DashBoard,
+  },
+];
 
-// export default router;
+export default createRouter({
+  history: createWebHistory(),
+  routes,
+  linkActiveClass: "active",
+});

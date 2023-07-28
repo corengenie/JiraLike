@@ -24,10 +24,20 @@ module.exports = {
             cert: fs.readFileSync(certFilePath),
         },
         proxy: {
-            '^/weatherforecast': {
-                target: 'http://localhost:5189/'
+            '^/api': {
+                target: 'http://localhost:5189',
+                pathRewrite: {'^/api' : '/'},
+                changeOrigin: true
             }
         },
-        port: 5002
+        port: 5002,
+        webSocketServer: false
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+            '@': path.resolve(__dirname, 'src/components/'),
+            },
+        },
     }
 }

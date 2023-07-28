@@ -7,6 +7,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "vueapp", "vueapp\vueapp.esp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{1A0200DD-5A1B-424A-8185-11A15386FA29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{230A4D87-A793-4057-99EF-D9246F6B4FF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{1A0200DD-5A1B-424A-8185-11A15386FA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A0200DD-5A1B-424A-8185-11A15386FA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A0200DD-5A1B-424A-8185-11A15386FA29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230A4D87-A793-4057-99EF-D9246F6B4FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230A4D87-A793-4057-99EF-D9246F6B4FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230A4D87-A793-4057-99EF-D9246F6B4FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230A4D87-A793-4057-99EF-D9246F6B4FF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
